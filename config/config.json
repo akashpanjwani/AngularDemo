@@ -1,0 +1,24 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "angular-js-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/angularJs/AngularJsWebPart.js",
+          "manifest": "./src/webparts/angularJs/AngularJsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "angular": {
+    "path": "node_modules/angular/angular.min.js",
+    "globalName": "angular"
+    },
+    "ng-office-ui-fabric": "/node_modules/ng-office-ui-fabric/ngOfficeUiFabric.min.js"
+  },
+  "localizedResources": {
+    "AngularJsWebPartStrings": "lib/webparts/angularJs/loc/{locale}.js"
+  }
+}
